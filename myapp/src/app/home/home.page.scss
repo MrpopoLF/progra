@@ -1,0 +1,14 @@
+.fondo{
+--background: url('../../assets/icon/00055-3025213988.png');
+  background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.barra {
+  position: fixed;
+  bottom: 0;
+  width: 100%; /* Opcional: ajusta el ancho según tus necesidades */
+  background-color: #007BFF; /* Establece el color de fondo deseado */
+  color: #fff; /* Establece el color del texto deseado */
+  /* Agrega otros estilos según tus preferencias */
+}
