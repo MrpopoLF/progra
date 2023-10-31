@@ -1,0 +1,9 @@
+.fondo{
+    --background: url('../../assets/icon/00055-3025213988.png');
+}
+.centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Opcional: centrado vertical */
+    height: 100%; /* Opcional: para ocupar toda la altura de la pantalla */
+  }
