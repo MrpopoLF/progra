@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Análisis Médicos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fondo">
+  <ion-list>
+    <ion-item *ngFor="let analisis of analisisMedicos">
+      <ion-thumbnail slot="start">
+        <img [src]="analisis.imagen" alt="Imagen del análisis">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ analisis.nombre }}</h2>
+        <p>{{ analisis.descripcion }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
