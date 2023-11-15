@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 import { EnfermeriaPage } from '../enfermeria/enfermeria.page';
+import { ControlPage } from '../control/control.page';
 
 @Component({
   selector: 'app-home',
@@ -9,8 +10,8 @@ import { EnfermeriaPage } from '../enfermeria/enfermeria.page';
 })
 export class HomePage {
 
-  constructor(private router: Router) {}
+  constructor(private navCtrl: NavController) {}
   irA(pagina: string) {
-    this.router.navigate([EnfermeriaPage]);
+    this.navCtrl.navigateForward('/' + pagina);
 }
 }

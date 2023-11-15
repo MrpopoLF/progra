@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { HomePage } from './home/home.page'; // Asegúrate de importar tu HomePage
+import { HomePage } from './home/home.page';
 import { EnfermeriaPage } from './enfermeria/enfermeria.page';
+import { ControlPage } from './control/control.page';
+import { AnalisisPage } from './analisis/analisis.page'; // Asegúrate de importar tu AnalisisPage
+
 
 const routes: Routes = [
   {
@@ -24,6 +27,18 @@ const routes: Routes = [
   {
     path: 'enfermeria',
     loadChildren: () => import('./enfermeria/enfermeria.module').then( m => m.EnfermeriaPageModule)
+  },
+  {
+    path: 'laboratorio',
+    loadChildren: () => import('./laboratorio/laboratorio.module').then( m => m.LaboratorioPageModule)
+  },
+  {
+    path: 'pago',
+    loadChildren: () => import('./pago/pago.module').then( m => m.PagoPageModule)
+  },
+  {
+    path: 'exito',
+    loadChildren: () => import('./exito/exito.module').then( m => m.ExitoPageModule)
   },
 ];
 

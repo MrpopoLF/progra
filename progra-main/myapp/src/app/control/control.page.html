@@ -1,6 +1,11 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Calendario de Control Médico</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="irAPago()">
+        Pagar {{ total | currency: 'USD':'symbol':'1.2-2' }}
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -8,4 +13,8 @@
   <div class="centrar">
     <ion-datetime class="calendario">calendario</ion-datetime>
   </div>
+  <ion-item>
+    <ion-label>Total</ion-label>
+    <ion-input [(ngModel)]="total" disabled></ion-input>
+  </ion-item>
 </ion-content>
