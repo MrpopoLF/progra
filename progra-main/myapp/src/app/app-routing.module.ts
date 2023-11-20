@@ -40,6 +40,10 @@ const routes: Routes = [
     path: 'exito',
     loadChildren: () => import('./exito/exito.module').then( m => m.ExitoPageModule)
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
 ];
 
 @NgModule({
